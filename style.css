@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: white;
+  min-height: var(--app-height, 100vh);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media (min-width: 0) {
+  .h1 {
+    font-size: 6.25rem;
+    line-height: 6.25rem;
+    letter-spacing: -0.15625rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 10.9375rem;
+    line-height: 10.9375rem;
+    letter-spacing: -0.27375rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h1 {
+    font-size: 12.5rem;
+    line-height: 12.5rem;
+    letter-spacing: -0.3125rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h2 {
+    font-size: 1.25rem;
+    line-height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .h2 {
+    font-size: 2.5rem;
+    line-height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h2 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h3 {
+    font-size: 0.9375rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.225rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.225rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h4 {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.1875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h4 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.3125rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.25rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h5 {
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.23438rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.3125rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.3125rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h6 {
+    font-size: 0.625rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h6 {
+    font-size: 0.9375rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1875rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h6 {
+    font-size: 0.8125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1625rem;
+  }
+}
+
+@media (min-width: 0) {
+  .h7 {
+    font-size: 0.9375rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h7 {
+    font-size: 2rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h7 {
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container .main {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.container .main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 1.625rem 0 1.625rem;
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .container .main .header {
+    margin: 5rem 8.125rem 0 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container .main .header {
+    margin: 3.5rem 45.9375rem 0 10.3125rem;
+  }
+}
+
+.container .main .header p {
+  margin-top: 0.5rem;
+}
+
+.container .main-greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main-greeting-day::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: '';
+  background-image: url("/assets/icons/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22.34px;
+  height: 24px;
+  margin-right: 1.04125rem;
+}
+
+.container .main-greeting-night::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: '';
+  background-image: url("/assets/icons/icon-moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22.34px;
+  height: 24px;
+  margin-right: 1.04125rem;
+}
+
+.container .main-content {
+  margin: 0 1.625rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .container .main-content {
+    margin: 0 8.75rem 4rem 4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .container .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 10.3125rem 6.125rem 10.3125rem;
+  }
+}
+
+.container .main-content .h1 {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.container .main-content .h7 {
+  margin-left: 0.8125rem;
+}
+
+@media (min-width: 960px) {
+  .container .main .expand {
+    margin-top: auto;
+  }
+}
+
+.container .details {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  padding: 2rem 1.625rem;
+}
+
+@media (min-width: 768px) {
+  .container .details {
+    padding: 7.4375rem 10.375rem 7.4375rem 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container .details {
+    padding: 4.625rem 26.9375rem 4.625rem 10.3125rem;
+  }
+}
+
+.container .details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.3125rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.btn::after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: '';
+  border-radius: 50px;
+  background-image: url("/assets/icons/icon-arrow-up.svg");
+  background-repeat: no-repeat;
+  background-color: #303030;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  margin: 0.25rem 0.25rem 0.25rem 1rem;
+}
+
+.btn:hover::after {
+  background-color: #999;
+}
+
+.btn-open::after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: '';
+  border-radius: 50px;
+  background-image: url("/assets/icons/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-color: #303030;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  margin: 0.25rem 0.25rem 0.25rem 1rem;
+}
+
+.btn-open:hover::after {
+  background-color: #999;
+}
+
+.refresh {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.refresh img {
+  width: 16.67px;
+  height: 16.67px;
+  margin-left: 1.04188rem;
+}
+
+.day {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  color: #303030;
+}
+
+@media (min-width: 0) {
+  .day-background {
+    background: rgba(0, 0, 0, 0.5) url("/assets/tablet/bg-image-daytime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .day-background {
+    background: rgba(0, 0, 0, 0.5) url("/assets/tablet/bg-image-daytime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .day-background {
+    background: rgba(0, 0, 0, 0.5) url("/assets/desktop/bg-image-daytime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.night {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  color: white;
+}
+
+@media (min-width: 0) {
+  .night-background {
+    background: rgba(0, 0, 0, 0.4) url("/assets/tablet/bg-image-nighttime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .night-background {
+    background: rgba(0, 0, 0, 0.4) url("/assets/tablet/bg-image-nighttime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .night-background {
+    background: rgba(0, 0, 0, 0.4) url("/assets/desktop/bg-image-nighttime.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

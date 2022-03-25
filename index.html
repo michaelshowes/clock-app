@@ -5,20 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Clock App</title>
 </head>
 <body>
-  , it's currently
 
-  in
+  <div id="container" class="container">
+    <div id="main" class="main">
+      <div class="header">
+        <div>
+          <q id="quote" class="quote h5"></q>
+          <p id="author" class="author h5 bold"></p>
+        </div>
+        <button id="refresh" class="refresh">
+          <img src="/assets/icons/icon-refresh.svg" alt="">
+        </button>
+      </div>
+      <div class="main-content">
+        <div class="time-block">
+          <p id="greeting" class="main-greeting h4 uppercase"></p>
+          <p id="time" class="time h1 bold"></p>
+          <span id="abbreviation" class="h7 thin uppercase"></span>
+          <p id="location" class="location h3 bold uppercase"></p>
+        </div>
+        <div class="expand">
+          <button id="btn" class="btn h5 bold uppercase">More</button>
+        </div>
+      </div>
+      <div id="details" class="details">
+        <ul>
+          <li>
+            <p class="timezone h6 uppercase">Current Timezone</p>
+            <P id="timezone" class="timezone-value h2 bold"></P>
+          </li>
+          <li>
+            <p class="day-year h6 uppercase">Day of the Year</p>
+            <P id="dayYear" class="day-year-value h2 bold">295</P>
+          </li>
+          <li>
+            <p class="day-week h6 uppercase">Day of the Week</p>
+            <P id="dayWeek" class="day-week-value h2 bold">5</P>
+          </li>
+          <li>
+            <p class="week-number h6 uppercase">Week Number</p>
+            <P id="weekNumber" class="week-number-value h2 bold">42</P>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  More
-  Less
+  <script src="script.js"></script>
 
-  Current timezone
-  Day of the year
-  Day of the week
-  Week number
 </body>
 </html>
