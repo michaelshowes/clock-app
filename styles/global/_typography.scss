@@ -1,59 +1,65 @@
 @use './settings' as *;
 @use '../mixins/' as *;
-
-/* outfit-300 - latin */
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/assets/fonts/outfit-v6-latin-300.woff2') format('woff2')
-}
-/* outfit-500 - latin */
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/assets/fonts/outfit-v6-latin-500.woff2') format('woff2')
-}
+@use '../functions/' as *;
 
 // Headers
 .h-l,
-.h-m
-.h-s
-.h-xs
+.h-m .h-s .h-xs,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font;
   margin: 0 0 20px;
 }
 
-.h-l {
-  @include font-weight(light);
-  @include font-clamp(20px, 5.3vw, 32px);
+h1 {
+  @include font-weight(bold);
+  font-size: rem(200);
+  line-height: 200px;
+  letter-spacing: -5px;
 }
 
-.h-m {
-  @include font-weight(light);
-  @include font-clamp(15px, 4.3vw, 24px);
+h2 {
+  @include font-weight(bold);
+  font-size: rem(56);
+  line-height: 68px;
 }
 
-.h-s {
-  @include font-weight(medium);
-  @include font-clamp(15px, 4.3vw, 24px);
+h3 {
+  @include font-weight(bold);
+  font-size: rem(24);
+  line-height: 28px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
 }
 
-.h-xs {
-  @include font-weight(medium);
-  @include font-clamp(14px, 3.3vw, 18px);
+h4 {
+  @include font-weight(regular);
+  font-size: rem(20);
+  line-height: 28px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h5 {
+  @include font-weight(bold);
+  font-size: rem(18);
+  line-height: 28px;
+}
+
+h6 {
+  @include font-weight(regular);
+  font-size: rem(15);
+  line-height: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 // Paragraphs
 p {
-  font-size: rem(18px);
+  font-size: rem(18);
 }
 
 ol,
