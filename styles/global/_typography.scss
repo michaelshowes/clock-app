@@ -1,10 +1,9 @@
 @use './settings' as *;
-@use '../mixins/' as *;
-@use '../functions/' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+@use '../global/colors' as *;
 
 // Headers
-.h-l,
-.h-m .h-s .h-xs,
 h1,
 h2,
 h3,
@@ -25,6 +24,7 @@ h2 {
   @include font-weight(bold);
   font-size: rem(56);
   line-height: 68px;
+  color: color(gray);
 }
 
 h3 {
@@ -55,14 +55,5 @@ h6 {
   line-height: 28px;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-// Paragraphs
-p {
-  font-size: rem(18);
-}
-
-ol,
-ul {
-  @include kill-bullets;
+  color: color(gray);
 }

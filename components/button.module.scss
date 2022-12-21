@@ -1,0 +1,52 @@
+@use '../styles/functions' as *;
+@use '../styles/mixins' as *;
+@use '../styles/global/colors' as *;
+@use '../styles/global/settings' as *;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: none;
+  background-color: white;
+  border: 0;
+  font-size: rem(16);
+  width: 150px;
+  text-transform: uppercase;
+  padding: 8px 8px 8px 21px;
+  border-radius: 30px;
+
+  @include hover {
+    .icon {
+      opacity: 0.5;
+    }
+  }
+
+  .label {
+    position: relative;
+    top: 2px;
+    @include font-weight(700);
+    opacity: 0.5;
+    letter-spacing: 5px;
+    line-height: 28px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color(gray);
+    color: white;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: $ts $te;
+
+    svg {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
