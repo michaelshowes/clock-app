@@ -1,0 +1,62 @@
+@use './settings' as *;
+@use '../mixins/' as *;
+
+/* outfit-300 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/outfit-v6-latin-300.woff2') format('woff2')
+}
+/* outfit-500 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/outfit-v6-latin-500.woff2') format('woff2')
+}
+
+// Headers
+.h-l,
+.h-m
+.h-s
+.h-xs
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  margin: 0 0 20px;
+}
+
+.h-l {
+  @include font-weight(light);
+  @include font-clamp(20px, 5.3vw, 32px);
+}
+
+.h-m {
+  @include font-weight(light);
+  @include font-clamp(15px, 4.3vw, 24px);
+}
+
+.h-s {
+  @include font-weight(medium);
+  @include font-clamp(15px, 4.3vw, 24px);
+}
+
+.h-xs {
+  @include font-weight(medium);
+  @include font-clamp(14px, 3.3vw, 18px);
+}
+
+// Paragraphs
+p {
+  font-size: rem(18px);
+}
+
+ol,
+ul {
+  @include kill-bullets;
+}

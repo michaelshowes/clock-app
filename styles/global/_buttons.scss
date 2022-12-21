@@ -1,0 +1,23 @@
+@use './settings' as *;
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  cursor: pointer;
+  appearance: none;
+  backface-visibility: hidden;
+  background: none;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  line-height: 1;
+  padding: 0;
+  transition: $ts $te;
+
+  &:disabled,
+  &[disabled] {
+    opacity: .5;
+    pointer-events: none;
+  }
+}

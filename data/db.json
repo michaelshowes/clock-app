@@ -1,0 +1,24 @@
+{
+  "title": "Fei - The NEXT.js 13 Boilerplate",
+  "description": "A Next.js 13 boilerplate suitable for headless Wordpress, using SCSS modules and more.",
+  "users": [
+    {
+      "id": "1",
+      "name": "Johannes",
+      "age": 25,
+      "email": "johan@mail.com"
+    },
+    {
+      "id": "2",
+      "name": "John",
+      "age": 30,
+      "email": "johnboi@mail.com"
+    },
+    {
+      "id": "3",
+      "name": "Wendy",
+      "age": 35,
+      "email": "windyday@mail.com"
+    }
+  ]
+}
